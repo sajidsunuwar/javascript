@@ -18,7 +18,7 @@ function validateForm()
 		document.getElementById('error').innerHTML="Password is Required";
 		return false;
 	}
-	else if(username.length<5 && password.length<5)
+	else if(username.length<5 || password.length<5)
 	{
 		document.getElementById('error').innerHTML="Username and Password should have min 5 characters";
 		return false;
